@@ -1,0 +1,6 @@
+{
+  "name": "বাঙালী ফুড (Bangali Food)",
+  "description": "বাঙালী ফুড - শতভাগ খাঁটি ও প্রাকৃতিক চাকের মধু। স্বাস্থ্যকর ও ভেজালমুক্ত প্রাকৃতিক খাদ্যপণ্য।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
