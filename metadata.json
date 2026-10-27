@@ -1,6 +1,8 @@
 {
-  "name": "বাঙালী ফুড (Bangali Food)",
-  "description": "বাঙালী ফুড - শতভাগ খাঁটি ও প্রাকৃতিক চাকের মধু। স্বাস্থ্যকর ও ভেজালমুক্ত প্রাকৃতিক খাদ্যপণ্য।",
+  "name": "বাঙালী ফুড (Bangali Food) - প্রিমিয়াম প্রাকৃতিক মধু ও খাদ্য",
+  "description": "শতভাগ খাঁটি ও প্রাকৃতিক চাকের মধু, কালোজিরা ফুলের মধু, সুন্দরবনের মধু এবং অর্গানিক ফুড ই-কমার্স শপ। যাত্রা বাড়ি, ঢাকা।",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

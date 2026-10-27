@@ -1,58 +1,114 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
+import React, { useState, useEffect } from 'react';
+import { CartProvider } from './context/CartContext';
+import { Header } from './components/layout/Header';
+import { Footer } from './components/layout/Footer';
+import { CartDrawer } from './components/cart/CartDrawer';
+import { FloatingWhatsApp } from './components/common/FloatingWhatsApp';
 
-import React from "react";
-import { Navbar } from "./components/Navbar";
-import { Hero } from "./components/Hero";
-import { WhyChooseUs } from "./components/WhyChooseUs";
-import { ProductHighlight } from "./components/ProductHighlight";
-import { AboutUs } from "./components/AboutUs";
-import { HoneyBenefits } from "./components/HoneyBenefits";
-import { CustomerReviews } from "./components/CustomerReviews";
-import { OrderCTA } from "./components/OrderCTA";
-import { ContactSection } from "./components/ContactSection";
-import { Footer } from "./components/Footer";
-import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
+import { HomePage } from './pages/HomePage';
+import { ProductsPage } from './pages/ProductsPage';
+import { ProductDetailsPage } from './pages/ProductDetailsPage';
+import { CartPage } from './pages/CartPage';
+import { CheckoutPage } from './pages/CheckoutPage';
+import { AboutPage } from './pages/AboutPage';
+import { ContactPage } from './pages/ContactPage';
+import { PolicyPage } from './pages/PolicyPage';
+import { PageView } from './types';
+
+export const AppContent: React.FC = () => {
+  const [currentView, setCurrentView] = useState<PageView>({ type: 'home' });
+
+  // Scroll to top on navigation change
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentView]);
+
+  const handleNavigate = (view: PageView) => {
+    setCurrentView(view);
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-[#FFF9ED] text-[#252A25] font-sans antialiased selection:bg-[#F28C28] selection:text-white">
+      {/* Global Header */}
+      <Header 
+        currentView={currentView}
+        navigate={handleNavigate}
+      />
+
+      {/* Main Content Area based on current view */}
+      <main className="flex-1">
+        {currentView.type === 'home' && (
+          <HomePage 
+            navigate={handleNavigate}
+          />
+        )}
+
+        {currentView.type === 'products' && (
+          <ProductsPage 
+            initialCategorySlug={currentView.categorySlug}
+            navigate={handleNavigate}
+          />
+        )}
+
+        {currentView.type === 'product_detail' && (
+          <ProductDetailsPage 
+            slug={currentView.slug}
+            navigate={handleNavigate}
+          />
+        )}
+
+        {currentView.type === 'cart' && (
+          <CartPage 
+            navigate={handleNavigate}
+          />
+        )}
+
+        {currentView.type === 'checkout' && (
+          <CheckoutPage 
+            navigate={handleNavigate}
+          />
+        )}
+
+        {currentView.type === 'about' && (
+          <AboutPage 
+            navigate={handleNavigate}
+          />
+        )}
+
+        {currentView.type === 'contact' && (
+          <ContactPage 
+            navigate={handleNavigate}
+          />
+        )}
+
+        {currentView.type === 'policy' && (
+          <PolicyPage 
+            initialTab={
+              currentView.policyType === 'delivery' ? 'delivery' :
+              currentView.policyType === 'refund' ? 'returns' :
+              currentView.policyType === 'privacy' ? 'privacy' : 'terms'
+            }
+            navigate={handleNavigate}
+          />
+        )}
+      </main>
+
+      {/* Global Footer */}
+      <Footer navigate={handleNavigate} />
+
+      {/* Slide-over Cart Drawer */}
+      <CartDrawer navigate={handleNavigate} />
+
+      {/* Floating 24/7 WhatsApp Assistance Button */}
+      <FloatingWhatsApp />
+    </div>
+  );
+};
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#0a0d0b] text-gray-100 selection:bg-orange-500/30 selection:text-orange-200 font-['Hind_Siliguri',sans-serif]">
-      {/* 1. Header / Navbar */}
-      <Navbar />
-
-      <main className="flex-1">
-        {/* 2. Hero Section */}
-        <Hero />
-
-        {/* 3. Why Choose Us */}
-        <WhyChooseUs />
-
-        {/* 4. Product Highlight */}
-        <ProductHighlight />
-
-        {/* 5. About Us */}
-        <AboutUs />
-
-        {/* 6. Honey Benefits */}
-        <HoneyBenefits />
-
-        {/* 7. Customer Reviews */}
-        <CustomerReviews />
-
-        {/* 8. Order / CTA Section */}
-        <OrderCTA />
-
-        {/* 9. Contact Section */}
-        <ContactSection />
-      </main>
-
-      {/* 10. Footer */}
-      <Footer />
-
-      {/* 11. Floating WhatsApp Button */}
-      <FloatingWhatsApp />
-    </div>
+    <CartProvider>
+      <AppContent />
+    </CartProvider>
   );
 }
