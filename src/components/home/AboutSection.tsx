@@ -18,7 +18,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ navigate }) => {
               <div className="absolute -inset-2 bg-[#D4A63C]/20 rounded-3xl -rotate-1 -z-10" />
               <div className="bg-white p-4 sm:p-5 rounded-2xl shadow-lg border border-[#164B35]/15 overflow-hidden">
                 <img
-                  src="/src/assets/images/hero_honey_banner_1793102911535.jpg"
+                  src="/images/hero_honey_banner_1793102911535.jpg"
                   alt="বাঙালী ফুড মধু সংগ্রহ"
                   className="w-full aspect-4/3 object-cover rounded-xl mb-4"
                 />

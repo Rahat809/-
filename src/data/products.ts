@@ -11,8 +11,8 @@ export const PRODUCTS: Product[] = [
     shortDescription: "সরাসরি বুনো চাক থেকে সংগৃহীত শতভাগ খাঁটি ও অপরিশোধিত প্রাকৃতিক মধু।",
     fullDescription: "বাঙালী ফুড-এর প্রাকৃতিক চাকের মধু সরাসরি গ্রাম ও বনাঞ্চলের স্বাভাবিক মৌচাক থেকে স্বাস্থ্যসম্মতভাবে আহরণ করা হয়। এতে কোনো কৃত্রিম চিনি, ফ্লেভার বা রাসায়নিক উপাদান ব্যবহার করা হয় না। প্রাকৃতিক পোলেন ও পুষ্টিগুণ পুরোপুরি অক্ষুণ্ণ থাকায় এর স্বাদ ও ঘ্রাণ অতুলনীয়।",
     images: [
-      "/src/assets/images/product_natural_honeycomb_honey_1793102930984.jpg",
-      "/src/assets/images/hero_honey_banner_1793102911535.jpg",
+      "/images/product_natural_honeycomb_honey_1793102930984.jpg",
+      "/images/hero_honey_banner_1793102911535.jpg",
     ],
     packageSizes: [
       {
@@ -61,8 +61,8 @@ export const PRODUCTS: Product[] = [
     shortDescription: "কালোজিরা ফুলের নেকটার সমৃদ্ধ বিশেষ গাঢ় ও পুষ্টিকর প্রাকৃতিক মধু।",
     fullDescription: "কালোজিরা চাষের মাঠে মৌমাছিরা সরাসরি কালোজিরা ফুলের রস সংগ্রহ করে এই মধু তৈরি করে। এটি অন্যান্য মধুর তুলনায় রঙে কিছুটা গাঢ় এবং স্বাদে অসাধারণ আকর্ষণীয়। দৈনন্দিন শারীরিক শক্তি বৃদ্ধি ও পুষ্টির পরিপূরক হিসেবে এটি অত্যন্ত সমাদৃত।",
     images: [
-      "/src/assets/images/product_kalojira_black_seed_honey_1793102931641.jpg",
-      "/src/assets/images/hero_honey_banner_1793102911535.jpg",
+      "/images/product_kalojira_black_seed_honey_1793102931641.jpg",
+      "/images/hero_honey_banner_1793102911535.jpg",
     ],
     packageSizes: [
       {
@@ -111,8 +111,8 @@ export const PRODUCTS: Product[] = [
     shortDescription: "পার্বত্য চট্টগ্রামের গভীর অরণ্যের বনফুল থেকে সংগৃহীত খাঁটি পাহাড়ি মধু।",
     fullDescription: "পার্বত্য অঞ্চলের দুর্গম পাহাড়ের বুনো মৌচাক থেকে বিশেষ অভিজ্ঞ মৌয়ালদের সহায়তায় এই পাহাড়ি মধু সংগ্রহ করা হয়। নানা প্রজাতির বুনো ফুলের নির্যাস থাকায় এর স্বাদ বৈচিত্র্যপূর্ণ এবং ঘ্রাণ মনমাতানো। কোনো ধরনের গরম বা ফিল্টারিং ছাড়াই বোতলজাত করা হয়।",
     images: [
-      "/src/assets/images/product_hill_forest_honey_1793102931132.jpg",
-      "/src/assets/images/hero_honey_banner_1793102911535.jpg",
+      "/images/product_hill_forest_honey_1793102931132.jpg",
+      "/images/hero_honey_banner_1793102911535.jpg",
     ],
     packageSizes: [
       {
@@ -153,8 +153,8 @@ export const PRODUCTS: Product[] = [
     shortDescription: "শীতের উজ্জ্বল সরিষা খেতের ফুলের মিষ্টি সুবাস ও সোনালী ঘন মধু।",
     fullDescription: "শীতকালে বাংলাদেশের বিস্তীর্ণ সোনালী সরিষা খেত যখন ফুলে ভরে ওঠে, তখন মৌমাছিদের মাধ্যমে এই সরিষা ফুলের মধু সংগ্রহ করা হয়। এটি হালকা মিষ্টি ও কোমল সুবাসযুক্ত। শীতকালে সরিষা মধু স্বাভাবিকভাবেই জমতে (crystallize) পারে, যা খাঁটি সরিষা মধুর সহজাত প্রাকৃতিক ধর্ম।",
     images: [
-      "/src/assets/images/product_mustard_flower_honey_1793102951853.jpg",
-      "/src/assets/images/hero_honey_banner_1793102911535.jpg",
+      "/images/product_mustard_flower_honey_1793102951853.jpg",
+      "/images/hero_honey_banner_1793102911535.jpg",
     ],
     packageSizes: [
       {
@@ -203,8 +203,8 @@ export const PRODUCTS: Product[] = [
     shortDescription: "লিচু বাগানের মনোরম ফুলেল মিষ্টি স্বাদ ও স্বচ্ছ সোনালী মধু।",
     fullDescription: "বসন্তের শুরুতে লিচু বাগানের গাছে গাছে যখন মুকুল ফোটে, তখন মৌমাছির প্রাকৃতিক পরাগায়ন ও রস আহরণের মাধ্যমে এই বিশেষ মধু প্রস্তুত হয়। এর মিষ্টি স্বাদ ও আকর্ষণীয় হালকা ফলের ঘ্রাণ বড়-ছোট সবার খুব পছন্দ। শিশুদের দুধ বা লেবু পানির সাথে খাওয়ার জন্য এটি অত্যন্ত উপযোগী।",
     images: [
-      "/src/assets/images/product_litchi_flower_honey_1793102950922.jpg",
-      "/src/assets/images/hero_honey_banner_1793102911535.jpg",
+      "/images/product_litchi_flower_honey_1793102950922.jpg",
+      "/images/hero_honey_banner_1793102911535.jpg",
     ],
     packageSizes: [
       {
